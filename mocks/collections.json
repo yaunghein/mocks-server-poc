@@ -1,0 +1,22 @@
+[
+	{
+		"id": "empty",
+		"routes": ["get-dashboard-data:empty", "get-properties-data:empty"]
+	},
+	{
+		"id": "normal",
+		"routes": ["get-dashboard-data:normal", "get-properties-data:normal"]
+	},
+	{
+		"id": "more",
+		"routes": ["get-dashboard-data:more", "get-properties-data:more"]
+	},
+	{
+		"id": "normal-with-auth",
+		"routes": [
+			"validate:check-token",
+			"get-dashboard-data:normal",
+			"get-properties-data:normal"
+		]
+	}
+]
